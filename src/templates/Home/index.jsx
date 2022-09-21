@@ -7,16 +7,14 @@ import { GridTwoColumn } from '../../components/GridTwoColumn';
 import { GridContent } from '../../components/GridContent';
 import { GridText } from '../../components/GridText';
 import { GridImage } from '../../components/GridImage';
-import { useLocation } from 'react-router-dom';
 import config from '../../config';
 
 function Home() {
   const [data, setData] = useState([]);
-  const location = useLocation();
   const isMounted = useRef(true);
 
   useEffect(() => {
-    const pathName = location.pathname.replace(/[^a-z0-9-_]/gi, '');
+    const pathName = null;
     const slug = pathName ? pathName : config.defaultSlug;
     const load = async () => {
       try {
@@ -36,7 +34,7 @@ function Home() {
     return () => {
       isMounted.current = true;
     };
-  }, [location]);
+  }, []);
 
   useEffect(() => {
     if (data === undefined) {
