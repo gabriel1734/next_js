@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Base /> should render 1`] = `
+Object {
+  "ContainerPlugin": [Function],
+  "ContainerReferencePlugin": [Function],
+  "ModuleFederationPlugin": [Function],
+  "scope": [Function],
+}
+`;
