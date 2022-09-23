@@ -25,11 +25,7 @@ export default class MyDocument extends Document {
   render() {
     return (
       <Html lang="pt-BR">
-        <Head>
-          <title>Teste</title>
-          <meta charSet="utf-8" />
-          <meta name="description" content="Teste" />
-        </Head>
+        <Head />
         <body>
           <Main />
           <NextScript />

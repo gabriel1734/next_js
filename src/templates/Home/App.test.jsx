@@ -1,4 +1,4 @@
-import Home from '.';
+import { Home } from '.';
 import { renderTheme } from '../../styles/render-theme';
 
 describe('Home', () => {
